@@ -104,3 +104,39 @@ body {
     color: var(--introBackground);
     border: none;
 }
+
+@media only screen and (max-width: 988px) {
+    body {
+        font-size: 20px;
+    }
+    #introduction__content {
+        flex-direction: column;
+    }
+
+    #logo {
+        left: 50vw;
+        transform: translateX(-50%);
+    }
+
+    #introduction__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #header__nav {
+        flex-direction: row;
+        top: auto;
+        right: auto;
+        bottom: 50px;
+        left: 50vw;
+        gap: 20px;
+        transform: translateX(-50%);
+    }
+
+    #introduction__description {
+        text-align: center;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+        max-width: calc(100vw - 100px);
+    }
+  }
